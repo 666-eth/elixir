@@ -1,4 +1,5 @@
 # elixir
+sed -i 's|^ENV ADDRESS=.*|ENV ADDRESS=0x0|; s|^ENV PRIVATE_KEY=.*|ENV PRIVATE_KEY=0x1|' ~/Dockerfile
 
 docker build . -f Dockerfile -t elixir-validator
 
